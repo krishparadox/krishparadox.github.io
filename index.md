@@ -8,7 +8,7 @@ sitemap:
   priority: 1.0
 ---
 
-# Hi, I am Krish.
+# Hi,
 
 I am a Software Engineer in large scale distributed systems, big data and distributed machine learning. This blog is a sneak peak into my learnings and an attempt to articulate and share them for others to derive value out of it. 
 
