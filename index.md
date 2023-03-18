@@ -1,17 +1,17 @@
 ---
 layout: page
 full_logo: true
-title: 
-subtitle: 
+title: Krish Ghosh
+subtitle: I don't fly
 description: A minimal yet feature-rich Jekyll theme made for personal websites and blogs.
 sitemap:
   priority: 1.0
 ---
-<p class="describe-text">A minimal yet feature-rich Jekyll theme made for personal websites and blogs.</p>
+<p class="describe-text">An ode to the intricacies of data.</p>
 <br>
-This is the index page, describe yourself in few sentences here. Perhaps talk about what you do for living and what you do in your free time. Maybe even leave an [email@address.com](#) or a link to your [resume](#).
+I am a Software Engineer in large scale distributed systems, big data and distributed machine learning. This blog is a sneak peak into my learnings and an attempt to articulate and share them for others to derive value out of it. 
 
-Pudhina Fresh is free and open-source. Checkout [Pudhina Fresh](https://github.com/ritijjain/pudhina-fresh).
+Feel free to reach out at <krishparadox@gmail.com>.
 
 <br>
 <br>
