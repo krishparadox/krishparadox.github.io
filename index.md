@@ -1,7 +1,7 @@
 ---
 layout: page
 full_logo: true
-title: 
+title: Home
 subtitle: Scaling the power of machine learning and data, one cluster at a time.
 description: This is my personal portfolio for showcasing my work and posting random thoughts.
 sitemap:
