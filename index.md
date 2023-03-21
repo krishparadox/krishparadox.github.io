@@ -12,7 +12,7 @@ I am a Software Engineer in large scale distributed systems, big data and distri
 
 Feel free to reach out at <krishparadox@gmail.com>.
 
-![Datapanda](https://raw.githubusercontent.com/krishparadox/krishparadox.github.io/master/assets/img/Screenshot%202023-03-14%20at%202.38.37%20AM.png)
+![Datapanda]("/assets/img/Screenshot 2023-03-14 at 2.38.37 AM.png")
 
 <br>
 <br>
