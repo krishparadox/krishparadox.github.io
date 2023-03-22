@@ -14,7 +14,7 @@ I am a Software Engineer in large scale distributed systems, big data and distri
 
 Feel free to reach out at <krishparadox@gmail.com>.
 
-I'm like the conductor of a digital orchestra, ensuring that each system and component plays in perfect harmony, delivering a flawless performance. My expertise lies in designing and implementing distributed systems and machine learning pipelines that can handle the biggest data challenges, ensuring that data flows seamlessly through the digital realm. Iconsider myself a problem solver and a code wrangler, juggling multiple tasks and keeping everything running like a well-oiled machine.
+I'm like the conductor of a digital orchestra, ensuring that each system and component plays in perfect harmony, delivering a flawless performance. My expertise lies in designing and implementing distributed systems and machine learning pipelines that can handle the biggest data challenges, ensuring that data flows seamlessly through the digital realm. I consider myself a problem solver and a code wrangler, juggling multiple tasks and keeping everything running like a well-oiled machine.
 
 <br>
 <img src="./assets/img/Screenshot 2023-03-14 at 2.38.37 AM.png" alt="dp">
