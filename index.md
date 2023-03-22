@@ -7,7 +7,7 @@ description: This is my personal portfolio for showcasing my work and posting ra
 sitemap:
   priority: 1.0
 ---
-
+<img src="./assets/img/pp_banner-min.jpeg" alt="pp">
 I am a Software Engineer in large scale distributed systems, big data and distributed machine learning. This blog is a sneak peak into my learnings and an attempt to articulate and share them for others to derive value out of it. 
 
 Feel free to reach out at <krishparadox@gmail.com>.
