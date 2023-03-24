@@ -7,8 +7,6 @@ splash_img_source: /assets/img/rs_cover_1.png
 splash_img_caption: all-reduce training.
 ---
 
-## Introduction
-
 Distributed machine learning is increasingly being used in ride-sharing apps to enable more efficient and accurate data processing. In this approach, the data collected from users is split into smaller subsets or partitions and distributed across multiple servers or nodes. Machine learning algorithms are then applied to these subsets, and the resulting models are combined to generate predictions and recommendations. This approach allows for faster processing of large datasets, as well as improved accuracy due to the use of more diverse data. Additionally, distributed machine learning can help ensure user privacy by limiting access to sensitive data. 
 
 ## What do they use ML for?
