@@ -50,7 +50,7 @@ Let us take the example of Lyft which is a famous ride-sharing app and a direct 
 
 The primary distributed workflows used by Lyft consists of three types: Computing, Training and Tuning. Libraries like Lyft Engines, Spark, Presto, Hive, Pandas, Fugue, Ray, Lyft Mozart are used as computation and tuning engines. For training, Tensorflow, Pytorch, Horovod, Kubeflow etc are used. Specialised libraries like Optuna and Hyperopt are used for tuning.
 
-<img src="./assets/img/rs_dist_2.png" alt="distributed environment">
+<img src="/assets/img/rs_dist_2.png" alt="distributed environment">
 
 The key is to efficiently utilise the compute resources. But again, keeping in mind that inadequate infrastructure leads to suboptimal modeling, sometimes scaling vertically also helps. 
 
@@ -58,13 +58,13 @@ The key is to efficiently utilise the compute resources. But again, keeping in m
 
 Spark is a framework used for running distributed applications efficiently on a cluster of compute instances which in our case is a Kubernetes cluster. Spark follows a driver-worker architecture where the driver in association with a resource manager like YARN, Apache Mesos etc divides the application/job into stages and the stages into tasks and assigns them to the workers. The workers do the distributed computation. The driver is launched on the client side job launching environment or among the clusters based on whether the mode is client-mode or cluster-mode.
 
-<img src="./assets/img/rs_dist_3.png" alt="distributed environment">
+<img src="/assets/img/rs_dist_3.png" alt="distributed environment">
 
-<img src="./assets/img/rs_dist_4.png" alt="distributed environment">
+<img src="/assets/img/rs_dist_4.png" alt="distributed environment">
 
  Training deep learning models is done on Kubernetes clusters. In deep learning we need to calculate the gradient in order to be able to adjust our weights. Without this learning can’t happen. In order to calculate that gradient, we need to process all of the data. When such data is too big this becomes a problem. This is why we parallelize these calculations. This means that we will have several computers working in parallel on a subset of the data. When each of these processing units or workers (they could be CPUs, GPUs, TPUs, etc.) is done calculating the gradient for its subset, they then need to communicate its results to the rest of the processes involved. Actually, every process needs to communicate its results with every other process/worker.Fortunately, someone else had that problem in the past and devised the Allreduce and Ring all-reduce algorithm, which does precisely this. The Allreduce algorithm has every process/worker share its data with all other processes and applies a reduction operation. Uber Horovod is used for this purpose. 
 
-<img src="./assets/img/rs_dist_5.png" alt="distributed environment">
+<img src="/assets/img/rs_dist_5.png" alt="distributed environment">
 
 ### Example implementation in Pyspark:
 
@@ -115,7 +115,7 @@ result.write.parquet("<s3 location>")
 
 Modern distributed computing frameworks like Ray can also be used. Let us take the example of how a LightGBM model is trained on Ray. Just like Spark the head and worker nodes are determined by the Ray cluster operator driven by the K8s API server.
 
-<img src="./assets/img/rs_dist_6.png" alt="distributed environment">
+<img src="/assets/img/rs_dist_6.png" alt="distributed environment">
 
 ```python
 import ray
