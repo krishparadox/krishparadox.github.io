@@ -2,7 +2,7 @@ title: Krish Ghosh # Shown in header on pages with full_logo: true
 short_logo: KG. # Shown in header on all pages by default unless full_logo: true is set
 description: > # The description for your site
   Personal portfolio and blog.
-url: "https://krishparadox.github.io/" # Site base URL
+url: "https://krishparadox.github.io" # Site base URL
 
 author:
   name: Krish Ghosh
