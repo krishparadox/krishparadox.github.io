@@ -1,6 +1,6 @@
 - name: Anovos # Project name, also used as heading
   id: p_anovos # Project id, must be unique amongst the projects
-  img_src: /assets/img/a_anovos.png # Optional image
+  img_src: /assets/img/p_anovos.png # Optional image
   description_less: Open source library for feature engineering at scale # Description shown at all times, text only
   description_more: > # Description shown only when the project card is expanded, HTML only
     <p>Anovos is an open source library written in pyspark and pandas. It helps feature engineer petabyte scale data at ease on various distributed system platforms like AWS EMR, K8s, Databricks etc. I wrote Anovos-CE, a proprietary edition for fast prototyping by clients based on the original Anovos. Did A/B testing of multiple multiprocessing frameworks like Dask, Ray, Modin, Vaex etc. </p> 
