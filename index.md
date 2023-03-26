@@ -22,8 +22,3 @@ Last but not the least, I consider myself a problem solver and a code wrangler, 
 P.S. I solemnly swear I didn't use ChatGPT to write this :P
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
