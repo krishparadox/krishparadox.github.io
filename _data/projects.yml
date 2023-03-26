@@ -1,13 +1,13 @@
-- name: Anovos # Project name, also used as heading
-  id: anovos # Project id, must be unique amongst the projects
-  img_src: /assets/img/p_anovos.png # Optional image
-  description_less: Open source library for feature engineering at scale # Description shown at all times, text only
-  description_more: > # Description shown only when the project card is expanded, HTML only
+- name: Anovos 
+  id: anovos 
+  img_src: /assets/img/p_anovos.png 
+  description_less: Open source library for feature engineering at scale 
+  description_more: > 
     <p>Anovos is an open source library written in pyspark and pandas. It helps feature engineer petabyte scale data at ease on various distributed system platforms like AWS EMR, K8s, Databricks etc. I wrote Anovos-CE, a proprietary edition for fast prototyping by clients based on the original Anovos. Did A/B testing of multiple multiprocessing frameworks like Dask, Ray, Modin, Vaex etc. </p> 
-  action_buttons: > # Action buttons for project, HTML only
+  action_buttons: > 
     <a href="https://github.com/anovos/anovos" target="_blank" class="btn btn-dark mb-1"><i class="fas fa-code-branch"></i> &nbsp Repository</a>
     <a href="https://docs.anovos.ai/" target="_blank" class="btn btn-dark mb-1"><i class="fas fa-align-right"></i> &nbsp Blog Post</a>
-  tags: [data-engineering, pyspark, pandas] # A list of tags
+  tags: [data-engineering, pyspark, pandas] 
 
 - name: Lendbetter Credit Risk Assessment Platform
   id: lendbetter
@@ -27,4 +27,35 @@
     <p>Tangible Internet, a smart home automation device using the ESP-8266 WIFI module got incubated in the JIO GenNext Hub Incubator. It had smart predictions enabled using basic classification algorithms. It also reached the semi finals of Texas Instruments Innovation Challenge</p>
   action_buttons: >
     <a href="https://www.youtube.com/watch?v=QvFvVGYnKNI" target="_blank" class="btn btn-dark mb-1"><i class="fas fa-align-right"></i> &nbsp Video</a>
+    <a href="https://github.com/krishparadox/Hyperspace-Chattels" target="_blank" class="btn btn-dark mb-1"><i class="fas fa-code-branch"></i> &nbsp Repository</a>
   tags: [python, backend, mqtt]
+
+- name: [Publication]Industrial UAV Olfactory Data Ingestion and Analsis Architecture
+  id: i_uav
+  img_src: /assets/img/data_flow.png
+  description_less: An ETL and ML pipeline for UAVs to collect industrial using olfactory sensors and analyse them.
+  description_more: >
+    <p>My team helped build the UAV from scratch and programmed the smell sensors. Once done, I helped write an algorithm for the drone to surveil the industrial area autonomously, collect data, sync it among themselves, transmit it to the base hub where it is analysed for anomaly detection and hence prevent a mishap by detecting possible leakage.</p>
+  action_buttons: >
+    <a href="https://ieeexplore.ieee.org/document/9028987" target="_blank" class="btn btn-dark mb-1"><i class="fas fa-align-right"></i> &nbsp Link to Paper</a>
+  tags: [data-engineering, scala, spark, emr, nosql, dynamodb]
+  
+- name: Tips 
+  id: tips 
+  img_src: /assets/img/tips.png 
+  description_less: Open source library for building recommender systems using GNN 
+  description_more: > 
+    <p>Graph Neural Networks(GNN) are increasingly being used due to the increase in data volume and the need to connect them and form meaningful networks. Recommender systems are used everywhere and the application of GNN in recsys is reaching profound degrees. This library is an attempt to bring the GNN based recsys algorithms under a single umbrella and help developers build SOTA recsys in just a couple of lines of code. This is currently WIP</p> 
+  action_buttons: > 
+    <a href="https://github.com/krishparadox/tips" target="_blank" class="btn btn-dark mb-1"><i class="fas fa-code-branch"></i> &nbsp Repository</a>
+  tags: [deep-learning, pytorch, pandas, gnn] 
+  
+- name: UnetLib 
+  id: unetlib 
+  img_src: /assets/img/unet.jpeg 
+  description_less: An open source library to implement SOTA Unets in just few of lines of code.
+  description_more: > 
+    <p>UNETs have a great number of crucial applications like that in medical image segmentation or in stable diffusion. The basic UNET is easy to implement but with every new development and research finding about UNETs being published, testing them on our existing architecture becomes cumbersome. UnetLib helps implement SOTA UNET architectures in 3-4 lines of code and test them.</p> 
+  action_buttons: > 
+    <a href="https://github.com/krishparadox/unetlib" target="_blank" class="btn btn-dark mb-1"><i class="fas fa-code-branch"></i> &nbsp Repository</a>
+  tags: [deep-learning, pytorch, pandas, unet]
