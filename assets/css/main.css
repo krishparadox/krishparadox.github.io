@@ -88,13 +88,13 @@ th {
 a.logo:hover {
   font-size: 300%;
   font-weight: 700;
-  color: #16a085;
+  color: ##a70000;
   display: block;
   text-decoration: none;
 }
 
 .menu {
-  color: #828282;
+  color: #a70000;
   font-size: 150%;
   margin: 0px;
   margin-top: 6px;
