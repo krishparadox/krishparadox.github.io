@@ -14,7 +14,7 @@
   img_src: /assets/img/credit_1.jpeg
   description_less: A fintech platform for assessing credit-worthiness using alternative data at scale.
   description_more: >
-    <p>Set up the data engineering pipeline for this fintech API platform using **Spring Boot, Scala-Spark, AWS EMR, NoSQL-DynamoDB** alongside testing tools like **Postman, JMeter** for clients to build finance and location-based alternative data products like adjudging credit-worthiness, targeting ads etc.</p>
+    <p>Set up the data engineering pipeline for this fintech API platform using <strong>Spring Boot, Scala-Spark, AWS EMR, NoSQL-DynamoDB</strong> alongside testing tools like <strong>Postman, JMeter</strong> for clients to build finance and location-based alternative data products like adjudging credit-worthiness, targeting ads etc.</p>
   action_buttons: >
     <a href="https://www.mobilewalla.com/lend-better" target="_blank" class="btn btn-dark mb-1"><i class="fas fa-align-right"></i> &nbsp Blog Post</a>
   tags: [data-engineering, scala, spark, emr, nosql, dynamodb]
