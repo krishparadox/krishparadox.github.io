@@ -19,7 +19,7 @@
     <a href="https://www.mobilewalla.com/lend-better" target="_blank" class="btn btn-dark mb-1"><i class="fas fa-align-right"></i> &nbsp Blog Post</a>
   tags: [data-engineering, scala, spark, emr, nosql, dynamodb]
   
-  - name: Tangible Internet
+- name: Tangible Internet
   id: t_internet
   img_src: /assets/img/T_internet-min.png
   description_less: A home automation PCB module to control every switch in a room from anywhere on this planet.
