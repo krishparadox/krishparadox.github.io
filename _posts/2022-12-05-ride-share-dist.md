@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  How do ride-sharing companies use distributed machine learning?
+title:  How do ride-sharing companies use spark, ray and kubernetes for distributed machine learning?
 date:   2022-12-05
 tags: [spark, distributed-systems, ray, kubernetes]
 splash_img_source: /assets/img/rs_cover_1.png
