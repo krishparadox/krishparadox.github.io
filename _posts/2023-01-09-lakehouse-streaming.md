@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  How to build a streaming lakehouse with very high data freshness using debezium, kafka and hudi?
+title:  How do we build a streaming lakehouse with very high data freshness using debezium, kafka and hudi?
 date:   2023-01-09
 tags: [kafka, distributed-systems, hudi, debezium]
 splash_img_source: /assets/img/lakehouse_cover.png
