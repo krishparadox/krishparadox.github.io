@@ -1,4 +1,11 @@
-# How to build a streaming lakehouse with very high data freshness using debezium, kafka and hudi?
+---
+layout: post
+title:  How to build a streaming lakehouse with very high data freshness using debezium, kafka and hudi?
+date:   2023-01-09
+tags: [kafka, distributed-systems, hudi, debezium]
+splash_img_source: /assets/img/lakehouse_cover.png
+splash_img_caption: Lakehouse overview.
+---
 
 A data lakehouse is a new, big-data storage architecture that combines the best features of both data warehouses and data lakes. A data lakehouse enables a single repository for all your data (structured, semi-structured, and unstructured) while enabling best-in-class machine learning, business intelligence, and streaming capabilities.
 
@@ -6,7 +13,7 @@ Data lakehouses usually start as data lakes containing all data types; the data 
 
 Using data lakehouse reduces data redundancy, makes the process cost effective, allows support for a wider variety of workload, enhances data governance, security and 
 
-<img>
+<img src="/assets/img/lakehouse_streaming_2.png" alt="lakehouse">
 
 # Basics
 
@@ -16,13 +23,13 @@ Using data lakehouse reduces data redundancy, makes the process cost effective, 
 
 A data lake is a centralized, highly flexible storage repository that stores large amounts of structured and unstructured data in its raw, original, and unformatted form. In contrast to data warehouses, which store already “cleaned” relational data, a data lake stores data using a flat architecture and object storage in its raw form. Data lakes are flexible, durable, and cost-effective and enable organizations to gain advanced insight from unstructured data, unlike data warehouses that struggle with data in this format.
 
-<img>
+<img src="/assets/img/lakehouse_streaming_3.png" alt="lakehouse">
 
 In data lakes, the schema or data is not defined when data is captured; instead, data is extracted, loaded, and transformed (ELT) for analysis purposes. Data lakes allow for machine learning and predictive analytics using tools for various data types from IoT devices, social media, and streaming data.
 
 Daily snapshots of the tables in RDBMS are taken. The read/write amplifications are usually high and there are dedicated replicas to isolate snapshot queries. Despite that the latency is usually high (more than 24hrs).
 
-<img>
+<img src="/assets/img/lakehouse_streaming_4.png" alt="lakehouse">
 
 **Requirements:**
 
@@ -37,7 +44,7 @@ Daily snapshots of the tables in RDBMS are taken. The read/write amplifications 
 
 Change data capture (CDC) refers to the process of identifying and capturing changes made to data in a database and then delivering those changes in real-time to a downstream process or system.
 
-<img>
+<img src="/assets/img/lakehouse_streaming_5.png" alt="lakehouse">
 
 1. Each CRUD operation streamed from DB to Subscriber:
 The CRUD (Create, Read, Update, Delete) operations are commonly used in database management systems. In a streaming context, each CRUD operation refers to a change in the data that is being streamed. In this context, "streaming" refers to the continuous flow of data from the database to a subscriber, who is interested in receiving updates to the data.
@@ -67,11 +74,11 @@ Capturing and applying only deltas refers to a data management technique that in
 
 Debezium is an open source distributed platform for change data capture. It has distributed Kafka-Connect Service for change data capture. It supports CDC from diverse RDBMS (Postgres, MySQL, MongoDB, etc.) and has pluggable Sinks through Kafka.
 
-<img>
+<img src="/assets/img/lakehouse_streaming_6.png" alt="lakehouse">
 
 Debezium has numerous advantages over its competitors:
 
-<img>
+<img src="/assets/img/lakehouse_streaming_7.png" alt="lakehouse">
 
 1. **Postgres Primary Dependency**
 ONLY the Postgres Primary publishes WriteAheadLogs (WALs).
@@ -86,7 +93,7 @@ ONLY the Postgres Primary publishes WriteAheadLogs (WALs).
     - Postgres10+ uses pgoutput (built-in) : Lightweight
     Postgres9 uses wal2Json (3rd party) : Heavier
     
-    <img>
+    <img src="/assets/img/lakehouse_streaming_8.png" alt="lakehouse">
     
 2. **Initial Table Snapshot (Bootstrapping)**
 **Need for bootstrapping:**
@@ -105,16 +112,17 @@ ONLY the Postgres Primary publishes WriteAheadLogs (WALs).
     reads
     - Can use read-replicas instead of the master
     
-    <img>
+    <img src="/assets/img/lakehouse_streaming_9.png" alt="lakehouse">
     
 3. ************************AVRO vs JSON************************
+<img src="/assets/img/lakehouse_streaming_10.png" alt="lakehouse">
 4. **Multiple logical replication streams for horizontal scaling**
     - Multiple large tables can overwhelm a single Debezium connector
     - Split the tables across multiple Debezium connectors
     `Total throughput = throughput_per_connector * num_connectors`
     - Each connector does have small CPU cost
     
-    <img>
+    <img src="/assets/img/lakehouse_streaming_11.png" alt="lakehouse">
     
 5. **Schema evolution and value of Freezing Schemas**
     - **Failed assumption: Schema changes are infrequent and always backwards compatible.**
@@ -135,7 +143,7 @@ ONLY the Postgres Primary publishes WriteAheadLogs (WALs).
         - Cons:
             - Schema is temporarily out of sync
     
-    <img>
+    <img src="/assets/img/lakehouse_streaming_12.png" alt="lakehouse">
     
 
 ## What is Apache Hudi?
@@ -149,33 +157,33 @@ ONLY the Postgres Primary publishes WriteAheadLogs (WALs).
 
 ### Hudi: Upserts and Incrementals
 
-<img>
+<img src="/assets/img/lakehouse_streaming_13.png" alt="lakehouse">
 
 ### Hudi: Storage Layer
 
-<img>
+<img src="/assets/img/lakehouse_streaming_14.png" alt="lakehouse">
 
 ### Hudi: Copy-on-write table
 
-<img>
+<img src="/assets/img/lakehouse_streaming_15.png" alt="lakehouse">
 
 ### Hudi: merge-on-read table
 
-<img>
+<img src="/assets/img/lakehouse_streaming_16.png" alt="lakehouse">
 
 # Architecture of our streaming lakehouse
 
 ## Basic architecture
 
-<img>
+<img src="/assets/img/lakehouse_streaming_17.png" alt="lakehouse">
 
 ## Data Lake Ingestion: CDC Path
 
-<img>
+<img src="/assets/img/lakehouse_streaming_18.png" alt="lakehouse">
 
 ## Data Lake Ingestion: Bootstrap path
 
-<img>
+<img src="/assets/img/lakehouse_streaming_19.png" alt="lakehouse">
 
 ## Conclusion and outcome:
 
