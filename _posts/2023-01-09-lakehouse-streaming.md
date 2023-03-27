@@ -114,7 +114,7 @@ ONLY the Postgres Primary publishes WriteAheadLogs (WALs).
     
     <img src="/assets/img/lakehouse_streaming_9.png" alt="lakehouse">
     
-3. ************************AVRO vs JSON************************
+3. **AVRO vs JSON**
 <img src="/assets/img/lakehouse_streaming_10.png" alt="lakehouse">
 4. **Multiple logical replication streams for horizontal scaling**
     - Multiple large tables can overwhelm a single Debezium connector
