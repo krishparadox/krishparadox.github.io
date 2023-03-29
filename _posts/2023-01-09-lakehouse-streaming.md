@@ -188,3 +188,11 @@ ONLY the Postgres Primary publishes WriteAheadLogs (WALs).
 ## Conclusion and outcome:
 
 With tables in the scale of 1000s, **proper automation and self healing, provisioning and isolation based on tiered SLAs, pre-commits and validation for quality checks, monitoring & alerting**, the freshness of data using the above architecture can brought down from **24hrs to 15mins.**
+
+
+**References**
+- https://www.databricks.com/dataaisummit/library-2022/#thu
+- https://debezium.io/
+- https://kafka.apache.org/documentation/
+- https://hudi.apache.org/
+- https://www.databricks.com/blog/2020/01/30/what-is-a-data-lakehouse.html
