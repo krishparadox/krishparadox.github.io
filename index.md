@@ -12,7 +12,7 @@ sitemap:
 <br>
 I am a Software Engineer in **large scale distributed systems, data platforms and distributed machine learning**. This blog is a glimpse into my learnings and an attempt to articulate and share them for others to derive value out of it. 
 
-Feel free to reach out to me at <krishparadox@gmail.com> or grab a glimpse of my work through my [resume](https://drive.google.com/file/d/1odepIVRgwAhwAznEAOuINi6kZAE7LZvM/view?usp=share_link).
+Feel free to reach out to me at <krishparadox@gmail.com> or grab a glimpse of my work through my [resume](https://drive.google.com/file/d/1tVqBAK4GRj25eW8CtElzTZjyRyl9gsMN/view?usp=share_link).
  
 I believe in being the conductor of both the digital and the human orchestra, ensuring that each system and component plays in perfect harmony, delivering a flawless performance. My expertise lies in designing and implementing distributed systems and machine learning pipelines that can handle the biggest data challenges, ensuring that data flows seamlessly through the digital realm. 
 My primary experience lies in distributed frameworks and libraries like **Apache Spark, Kafka, Flink, Airflow, Ray**, popular python libraries like **pandas, numpy, sklearn, pytorch** etc, SQL and noSQL databases like **DynamoDB, Redshift, Athena** mainly in an **AWS Environment** using AWS technologies.
