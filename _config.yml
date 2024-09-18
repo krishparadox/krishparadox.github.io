@@ -16,10 +16,10 @@ timezone: Asia/Calcutta
 
 title: Krish Ghosh # the main title
 
-tagline: Personal Blog. I post here about learnings, projects, and interesting self-reflections. # it will display as the subtitle
+tagline: Hi! I'm a software engineer in backend and distributed systems, dedicated to building scalable architectures. Here on my personal portfolio, I share my learnings, projects, and insightful self-reflections. Feel free to shoot me an email at krishparadox@gmail.com. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  This is Krish Ghosh's personal portfolio. I post here about learnings, projects, and interesting self-reflections.
+  Hi! I'm a software engineer in backend and distributed systems, dedicated to building scalable architectures. On my personal portfolio, I share my learnings, projects, and insightful self-reflections. Let's connect and share experiences.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -39,8 +39,8 @@ social:
   email: krishparadox@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    - https://twitter.com/krishparadoxx # change to your Twitter homepage
+    - https://github.com/krishparadox # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -99,7 +99,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/side_image.jpg
+avatar: assets/img/avatar3.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
