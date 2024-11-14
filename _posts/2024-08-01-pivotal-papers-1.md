@@ -2,7 +2,7 @@
 title: Famous Papers That Changed the Course of Software Architecture Part 1
 description: Famous Papers That Changed the Course of Software Architecture Part 1.
 author: krish
-date: 2019-08-01 11:33:00 +0800
+date: 2024-08-01 11:33:00 +0800
 categories: [Blogging]
 tags: [system-design]
 ---
